@@ -174,7 +174,7 @@ const Chat: NextPage = () => {
 
         return () => {
             if (inbox) {
-                pusher.unsubscribe(`private-inbox-${inbox._id}`);
+                pusher.unsubscribe(`presence-inbox-${inbox._id}`);
             }
         };
     }, [inbox]);
