@@ -14,7 +14,7 @@ const Home: NextPage = () => {
                     </Link>
 
                     <Link href="/auth/register">
-                        <a className="border-4 py-3 px-20 hover:border-primary">[ Register ] Click Here if you don't have an account</a>
+                        <a className="border-4 py-3 px-20 hover:border-primary">[ Register ] Click Here if you don&apos;t have an account</a>
                     </Link>
 
                     <Link href="/app/find-users">
