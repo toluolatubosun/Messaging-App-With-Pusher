@@ -21,6 +21,10 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded({extended: true})); // for parsing application/x-www-form-urlencoded
 
+app.get("/", (req, res) => {
+    res.status(200).send("Hello World!");
+});
+
 // Route Middleware
 app.use("/api/auth", require("./routes/auth.route"));
 app.use("/api/user", require("./routes/user.route"));
