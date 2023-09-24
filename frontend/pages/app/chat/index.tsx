@@ -120,7 +120,7 @@ const Chat: NextPage = () => {
             if (pusher.connection.state === "disconnected") {
                 pusher.connection.connect();
             }
- 
+
             pusher.signin()
 
             const channel = pusher.subscribe(`presence-inbox-${inbox._id}`);
@@ -195,7 +195,7 @@ const Chat: NextPage = () => {
                             </p>
                         </div>
 
-                        <div ref={containerRef} className="h-3/5 bg-white my-2 rounded-md overflow-y-scroll">
+                        <div ref={containerRef} className={`h-3/5 bg-white overflow-y-scroll ${isTyping ? "mt-2 rounded-t-md" : "my-2 rounded-md"}`}>
                             <div className="px-3 py-2">
                                 {messages.map((item: any, index: number) => (
                                     <div key={index} className={`flex flex-col ${item.sender._id === user._id ? "items-end" : "items-start"} my-2`}>
@@ -206,13 +206,13 @@ const Chat: NextPage = () => {
                                     </div>
                                 ))}
                             </div>
-
-                            {isTyping && (
-                                <div className="bg-primary/50 p-2">
-                                    <h1 className="font-Sora">Typing...</h1>
-                                </div>
-                            )}
                         </div>
+
+                        {isTyping && (
+                            <div className="bg-primary/50 text-white p-2 mb-2">
+                                <h1 className="font-Sora">Typing...</h1>
+                            </div>
+                        )}
 
                         <InputField
                             type="text"

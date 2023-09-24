@@ -54,3 +54,8 @@ yarn install
 ```
 yarn dev
 ```
+
+## Future Improvements
+- Video chat
+- Voice chat
+- File sharing
