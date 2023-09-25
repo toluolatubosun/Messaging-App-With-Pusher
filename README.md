@@ -3,7 +3,7 @@
 This is a simple real-time chat app built using the MERN stack and Pusher. It is a private chat app where users can create an account, login, and chat with other users in real-time.
 
 ## Full Tutorial
-- Medium - [MERN Stack Real-time Private Chat App with Pusher](https://medium.com/p/6b0b0b6c1b0a)
+- Medium - [MERN Stack Real-time Private Chat App with Pusher](https://medium.com/@toluolatubosun/lets-do-real-time-messaging-with-mern-stack-pusher-998dbbd39bb9)
 
 ## Features
 - Create an account
